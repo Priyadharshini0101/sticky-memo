@@ -6,6 +6,8 @@ export const boardListStyles = {
   alignItems: 'center',
   backgroundColor: theme.palette.background.default,
   gap: '10px',
+  marginTop: 8,
+  width: '100%'   
 };
 
 export const scrollBoxStyles = {

@@ -2,6 +2,13 @@ import theme from '../theme';
 
 export const noteListStyles = {
   display: 'flex',
+  marginTop: 8,
+  width: '100%',
+  [theme.breakpoints.down('md')]: {
+    flexDirection: 'column',
+    alignItems: 'center',
+    gap: '10px',
+  },
 };
 
 export const scrollBoxStyles = {
@@ -11,7 +18,7 @@ export const scrollBoxStyles = {
   justifyContent: 'flex-start',
   alignItems: 'flex-start',
   overflowY: 'auto',
-  height: '500px',
+  height: '600px',
   width: '80%',
   margin: '0 auto',
   padding: '0.5em',
@@ -19,6 +26,12 @@ export const scrollBoxStyles = {
   '&::-webkit-scrollbar-thumb': { backgroundColor: theme.palette.secondary.main, borderRadius: '8px', transition: 'background-color 0.3s ease-in-out' },
   '&::-webkit-scrollbar-thumb:hover': { backgroundColor: theme.palette.accent.main },
   '&::-webkit-scrollbar-track': { backgroundColor: '#f1f1f1', borderRadius: '8px' },
+  [theme.breakpoints.down('md')]: {
+    justifyContent: 'center',
+    width: '100%',
+    paddingRight: '0em',
+    alignItems: 'center'
+  },
 };
 
 export const noteListContainer = {
